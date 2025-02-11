@@ -1,0 +1,147 @@
+:root {
+    --MainBackground:hsl(0, 0%, 8%);
+    --cardBackground:hsl(0, 0%, 12%);
+    --buttonColor:hsl(0, 0%, 20%);
+    --white: hsl(0, 0%, 100%);
+    --pageGreen: hsl(75, 94%, 57%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+
+body {
+    background-color: var(--MainBackground);
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    height: 100vh;
+    padding: 2em;
+    font-size: 0.8rem;
+}
+.card {
+    font-size:0.8rem;
+    width: 25em;
+    height: 35em;
+    background-color: var(--cardBackground);
+    border-radius:0.8em;
+    margin:auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin:auto;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;}
+    
+    
+    .container img {
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 50%;
+        border: 3px solid var(--pageGreen)
+    }
+
+    .card h1 {
+        text-align: center;
+        color: var(--white);
+        font-size:1rem;
+    }
+
+    .attribution {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        color: var(--white);
+        margin: 0.8rem;
+        text-align: center;
+
+    }
+
+    .attribution a {
+        color: var(--pageGreen);
+        &:hover {
+            background-color: var(--buttonColor);
+            border-radius: 0.5em;
+        }
+    }
+
+    .card h2 {
+        text-align: center;
+        color: var(--pageGreen);
+        margin-top: 0px;
+
+    }
+    .card h3 {
+        color:var(--white);
+        text-align: center; 
+        font-weight: normal;  }
+
+    .card button {
+        display: block;
+        width: 90%;
+        height: 2.5em;
+        background-color: var(--buttonColor);
+        color: var(--white);
+        border-radius: 0.8em;
+        cursor:pointer;
+        font-weight: bold;
+        border:none;
+    }
+    button:hover {
+        background-color: var(--pageGreen);
+        color:var(--MainBackground);
+    }
+
+    .containerLinks {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0.8em;
+    }
+
+
+    /* Small devices (landscape phones, less than 640px) */
+    @media (max-width:640px) {
+        .card {
+            min-width: 300px;
+            min-height: 500px;
+        }
+
+        .attribution {
+            display: none;
+        }
+        
+    } 
+    
+    /* Medium devices (tablets) */
+    @media (min-width: 641px) and (max-width: 1023px) {
+
+        .card {
+            height: 70%;
+            width: 60%;
+            max-height: 500px;
+            max-width: 350px;        }
+        
+    }
+    
+    /* Large devices (desktops)*/
+    @media (min-width: 1024px) { 
+        .card {
+            height: 500px;
+            width: 350px;
+        }
+    }
