@@ -1,4 +1,4 @@
-# Frontend Mentor - Interactive rating component solution
+# Frontend Mentor - Social links profile solution
 
 This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -26,7 +26,7 @@ Both Screenshots of the Desktop and Mobile Versions added to the project main fo
 
 ### Links
 
-- Solution URL: https://interactive-rating-component-weld-omega.vercel.app/ 
+- Solution URL: https://social-link-profiles-seven.vercel.app/
 
 ## My process
 
